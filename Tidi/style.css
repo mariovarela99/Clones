@@ -16,7 +16,8 @@ section.wrapper {
 
 div.modal-main {
   position: absolute;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 90%;
   margin: 0 auto;
   display: flex;
@@ -32,7 +33,72 @@ div.form-main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+div.form-main > h2 {
+  color: #191919;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 42px;
+}
+
+div.form-main > p.logininto {
+  color: #121212;
+  font-size: 16px;
+  width: 300px;
+  text-align: left;
+}
+
+div.form-main form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
+}
+
+div.form-main form label {
+  width: 300px;
+  text-align: left;
+}
+
+div.form-main form input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid rgba(251, 2, 247, 0.3);
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: #232323;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  outline: 0;
+}
+
+div.form-main form input::placeholder {
+  color: #232323;
+}
+
+div.form-main form label,
+div.form-main form p,
+div.modal-main p {
+  font-size: 12px;
+  color: #666666;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+div.form-main form button {
+  background-image: linear-gradient(to right, #ffce49, #fb02f7);
+  width: 300px;
+  height: 45px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 25px auto 15px;
 }
 
 div.text-form {
@@ -63,4 +129,15 @@ div.text-form p {
   line-height: 2;
   text-transform: capitalize;
   font-weight: 500;
+}
+
+a#createAccount {
+  background: transparent;
+  border-radius: 25px;
+  padding: 10px 30px;
+  border: 1px solid #fc06f2;
+  color: #fc06f2;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 3px;
 }
