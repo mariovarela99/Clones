@@ -132,7 +132,8 @@ div.text-form h3 {
   line-height: 1.3;
   font-weight: 400;
   margin-bottom: 15px;
-  text-transform: capitalize;
+  text-transform: initial;
+  letter-spacing: 1px;
 }
 
 div.text-form p {
